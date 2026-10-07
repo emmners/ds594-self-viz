@@ -1,0 +1,931 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='combined' inline='true' name='federated.03v0n3u1yyl5qu1fhsbqh1frdgfh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='combined' name='semistructpassivestore-direct.1ubivc20xjpjl719tooau1hjjeh5'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/emmal/Desktop/DS594/Spotify Extended Streaming History' filename='combined.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[combined.json]'>
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+                <semistruct-schema-sequel table='[combined.json]'>
+                  <semistruct-schema-node global-name='audiobook_chapter_title'>
+                    <name>audiobook_chapter_title</name>
+                    <parent-name />
+                    <type>string</type>
+                    <is-selected>true</is-selected>
+                    <is-newly-discovered>true</is-newly-discovered>
+                    <sample-data />
+                  </semistruct-schema-node>
+                  <semistruct-schema-node global-name='audiobook_chapter_uri'>
+                    <name>audiobook_chapter_uri</name>
+                    <parent-name />
+                    <type>string</type>
+                    <is-selected>true</is-selected>
+                    <is-newly-discovered>true</is-newly-discovered>
+                    <sample-data />
+                  </semistruct-schema-node>
+                  <semistruct-schema-node global-name='audiobook_title'>
+                    <name>audiobook_title</name>
+                    <parent-name />
+                    <type>string</type>
+                    <is-selected>true</is-selected>
+                    <is-newly-discovered>true</is-newly-discovered>
+                    <sample-data />
+                  </semistruct-schema-node>
+                  <semistruct-schema-node global-name='audiobook_uri'>
+                    <name>audiobook_uri</name>
+                    <parent-name />
+                    <type>string</type>
+                    <is-selected>true</is-selected>
+                    <is-newly-discovered>true</is-newly-discovered>
+                    <sample-data />
+                  </semistruct-schema-node>
+                </semistruct-schema-sequel>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation connection='semistructpassivestore-direct.1ubivc20xjpjl719tooau1hjjeh5' name='combined.json' table='[combined.json]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>audiobook_chapter_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[audiobook_chapter_title]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>audiobook_chapter_title</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>audiobook_chapter_uri</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[audiobook_chapter_uri]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>audiobook_chapter_uri</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>audiobook_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[audiobook_title]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>audiobook_title</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>audiobook_uri</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[audiobook_uri]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>audiobook_uri</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conn_country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[conn_country]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>conn_country</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>episode_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[episode_name]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>episode_name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>episode_show_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[episode_show_name]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>episode_show_name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incognito_mode</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[incognito_mode]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>incognito_mode</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ip_addr</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ip_addr]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>ip_addr</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>master_metadata_album_album_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[master_metadata_album_album_name]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>master_metadata_album_album_name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>master_metadata_album_artist_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[master_metadata_album_artist_name]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>master_metadata_album_artist_name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>master_metadata_track_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[master_metadata_track_name]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>master_metadata_track_name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ms_played</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ms_played]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>ms_played</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offline</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[offline]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>offline</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offline_timestamp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[offline_timestamp]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>offline_timestamp</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>platform</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[platform]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>platform</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reason_end</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[reason_end]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>reason_end</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reason_start</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[reason_start]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>reason_start</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shuffle</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[shuffle]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>shuffle</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>skipped</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[skipped]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>skipped</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>spotify_episode_uri</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[spotify_episode_uri]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>spotify_episode_uri</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>spotify_track_uri</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[spotify_track_uri]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>spotify_track_uri</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ts</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ts]</local-name>
+            <parent-name>[combined.json]</parent-name>
+            <remote-alias>ts</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[combined.json_800EA0F26835443C833DCB2C7A33F523]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Calculation1' datatype='real' name='[Calculation_0204554810609665]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[ms_played] / 3600000' />
+      </column>
+      <column caption='Date' datatype='date' name='[Calculation_1730402011136001]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE([ts])' />
+      </column>
+      <column aggregation='Sum' caption='Hour' datatype='integer' name='[Calculation_1730402011344898]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATEPART(&apos;hour&apos;, [ts])' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='combined.json' datatype='table' name='[__tableau_internal_object_id__].[combined.json_800EA0F26835443C833DCB2C7A33F523]' role='measure' type='quantitative' />
+      <column caption='Audiobook Chapter Title' datatype='string' name='[audiobook_chapter_title]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>audiobook_chapter_title</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Audiobook Chapter Uri' datatype='string' name='[audiobook_chapter_uri]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>audiobook_chapter_uri</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Audiobook Title' datatype='string' name='[audiobook_title]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>audiobook_title</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Audiobook Uri' datatype='string' name='[audiobook_uri]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>audiobook_uri</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Conn Country' datatype='string' name='[conn_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>conn_country</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Episode Name' datatype='string' name='[episode_name]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>episode_name</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Episode Show Name' datatype='string' name='[episode_show_name]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>episode_show_name</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Incognito Mode' datatype='boolean' name='[incognito_mode]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>incognito_mode</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Ip Addr' datatype='string' name='[ip_addr]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>ip_addr</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Master Metadata Album Album Name' datatype='string' name='[master_metadata_album_album_name]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>master_metadata_album_album_name</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Master Metadata Album Artist Name' datatype='string' name='[master_metadata_album_artist_name]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>master_metadata_album_artist_name</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Master Metadata Track Name' datatype='string' name='[master_metadata_track_name]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>master_metadata_track_name</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Ms Played' datatype='real' name='[ms_played]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>ms_played</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Offline' datatype='boolean' name='[offline]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>offline</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Offline Timestamp' datatype='real' name='[offline_timestamp]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>offline_timestamp</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Platform' datatype='string' name='[platform]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>platform</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Reason End' datatype='string' name='[reason_end]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>reason_end</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Reason Start' datatype='string' name='[reason_start]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>reason_start</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Shuffle' datatype='boolean' name='[shuffle]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>shuffle</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Skipped' datatype='boolean' name='[skipped]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>skipped</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Spotify Episode Uri' datatype='string' name='[spotify_episode_uri]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>spotify_episode_uri</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Spotify Track Uri' datatype='string' name='[spotify_track_uri]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>spotify_track_uri</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Ts' datatype='datetime' datatype-customized='true' name='[ts]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>ts</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column-instance column='[Calculation_1730402011344898]' derivation='None' name='[none:Calculation_1730402011344898:ok]' pivot='key' type='ordinal' />
+      <folders-common>
+        <folder name='Combined'>
+          <folder-item name='[Document Index (generated)]' type='field' />
+          <folder-item name='[audiobook_chapter_title]' type='field' />
+          <folder-item name='[audiobook_chapter_uri]' type='field' />
+          <folder-item name='[audiobook_title]' type='field' />
+          <folder-item name='[audiobook_uri]' type='field' />
+          <folder-item name='[conn_country]' type='field' />
+          <folder-item name='[episode_name]' type='field' />
+          <folder-item name='[episode_show_name]' type='field' />
+          <folder-item name='[incognito_mode]' type='field' />
+          <folder-item name='[ip_addr]' type='field' />
+          <folder-item name='[master_metadata_album_album_name]' type='field' />
+          <folder-item name='[master_metadata_album_artist_name]' type='field' />
+          <folder-item name='[master_metadata_track_name]' type='field' />
+          <folder-item name='[offline]' type='field' />
+          <folder-item name='[platform]' type='field' />
+          <folder-item name='[reason_end]' type='field' />
+          <folder-item name='[reason_start]' type='field' />
+          <folder-item name='[shuffle]' type='field' />
+          <folder-item name='[skipped]' type='field' />
+          <folder-item name='[spotify_episode_uri]' type='field' />
+          <folder-item name='[spotify_track_uri]' type='field' />
+          <folder-item name='[ts]' type='field' />
+        </folder>
+      </folders-common>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_1730402011344898:ok]' palette='cyclic_10_0' type='palette'>
+            <map to='#1ba3c6'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#22ac7a'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#29b2c1'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#29b69b'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#35c0ba'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#36a456'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#4f7cba'>
+              <bucket>23</bucket>
+            </map>
+            <map to='#54a237'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#7075bf'>
+              <bucket>22</bucket>
+            </map>
+            <map to='#92b22a'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#936ec3'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#b76bc0'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#c6bc21'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#d96abc'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#e44123'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#e53339'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#e5ba21'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#ee74b1'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#f03958'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#f16b18'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#f7527b'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#f88f16'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#f8ac1d'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#fc73a0'>
+              <bucket>17</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Document Index (generated)' />
+        <field-sort-custom-order field='conn_country' />
+        <field-sort-custom-order field='episode_name' />
+        <field-sort-custom-order field='episode_show_name' />
+        <field-sort-custom-order field='incognito_mode' />
+        <field-sort-custom-order field='ip_addr' />
+        <field-sort-custom-order field='master_metadata_album_album_name' />
+        <field-sort-custom-order field='master_metadata_album_artist_name' />
+        <field-sort-custom-order field='master_metadata_track_name' />
+        <field-sort-custom-order field='ms_played' />
+        <field-sort-custom-order field='Calculation_0204554810609665' />
+        <field-sort-custom-order field='offline' />
+        <field-sort-custom-order field='offline_timestamp' />
+        <field-sort-custom-order field='platform' />
+        <field-sort-custom-order field='reason_end' />
+        <field-sort-custom-order field='reason_start' />
+        <field-sort-custom-order field='shuffle' />
+        <field-sort-custom-order field='skipped' />
+        <field-sort-custom-order field='spotify_episode_uri' />
+        <field-sort-custom-order field='spotify_track_uri' />
+        <field-sort-custom-order field='ts' />
+        <field-sort-custom-order field='Calculation_1730402011344898' />
+        <field-sort-custom-order field='Calculation_1730402011136001' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='combined.json' id='combined.json_800EA0F26835443C833DCB2C7A33F523'>
+            <properties context=''>
+              <relation connection='semistructpassivestore-direct.1ubivc20xjpjl719tooau1hjjeh5' name='combined.json' table='[combined.json]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined' name='federated.03v0n3u1yyl5qu1fhsbqh1frdgfh' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.03v0n3u1yyl5qu1fhsbqh1frdgfh'>
+            <column caption='Calculation1' datatype='real' name='[Calculation_0204554810609665]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[ms_played] / 3600000' />
+            </column>
+            <column aggregation='Sum' caption='Hour' datatype='integer' name='[Calculation_1730402011344898]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATEPART(&apos;hour&apos;, [ts])' />
+            </column>
+            <column caption='Ms Played' datatype='real' name='[ms_played]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>ms_played</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Calculation_1730402011344898]' derivation='None' name='[none:Calculation_1730402011344898:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_0204554810609665]' derivation='Sum' name='[sum:Calculation_0204554810609665:qk]' pivot='key' type='quantitative' />
+            <column caption='Ts' datatype='datetime' datatype-customized='true' name='[ts]' role='dimension' type='ordinal'>
+              <desc>
+                <formatted-text>
+                  <run>ts</run>
+                </formatted-text>
+              </desc>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.03v0n3u1yyl5qu1fhsbqh1frdgfh].[sum:Calculation_0204554810609665:qk]' scope='rows' value='Hours Listened on Spotify from 2019 to Now' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03v0n3u1yyl5qu1fhsbqh1frdgfh].[sum:Calculation_0204554810609665:qk]</rows>
+        <cols>[federated.03v0n3u1yyl5qu1fhsbqh1frdgfh].[none:Calculation_1730402011344898:ok]</cols>
+      </table>
+      <simple-id uuid='{0ECA1829-4D05-4AC2-AF76-7E2B4EF46AA9}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.03v0n3u1yyl5qu1fhsbqh1frdgfh].[none:Calculation_1730402011344898:ok]</field>
+            <field>[federated.03v0n3u1yyl5qu1fhsbqh1frdgfh].[yr:Calculation_1730402011136001:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AFA0C9A2-035D-4937-96A3-01EE67B3D3F5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAekUlEQVR4nO2dWXBc13nn/+fc7sbW2Ahwp0ASFFeRlEzLVMl25FGkKVlWtFiJNeUoGnvs
+      mWQcJ5WkKi8zL1Nx1UyqJjXLw1RcUzVLJnEmsuVozdiyFsuSHEkULZICSRHEvqOB3rvvvpwz
+      Dw1AAIjuiwZud9/bfX5PINCNPri83z3f+Zb/RzjnHAJBA0IIIbTWixAIaokwAEFDIwxA0NAI
+      A/AxzNIxMTUHcIbx8QmI05r3CAPwMY6exRvvXAC4g9deex3c1vD26z/FR9dGMDEyBMMyMTQ6
+      gdmxcQwNXkYsa9Z6yYFDGIDPmfzkQ/zVX/8NRmNZXH7jFZADp8GnP8D777wFRVPx5jsf4Mo7
+      P8PF8RSizVKtlxs4hAH4nIOnzuOb//wZHNnTCcdhaGpqRihEAeYgn01DM2xQqQMPPfwAok3C
+      AMqFiDyAf2GWhuHJBRw/0ofBm0M4duQ2vPXGW4juO4r9LTquTiSwe/9B7IwAO4/ejuZaLzhg
+      EEJI1QyAcw5CSDU+SiDYFFVNhDmOU62PEgg2jTgDCBoaYQCChkYYgKChEQYgaGiEAQgaGmEA
+      goZGGICgoQnVegECwWo452AOA7McWIYFU9HBGUNTtAWh5jCkkAQiUVDqzbNbGICg5ji2g/nr
+      U9CyCizNhG1YsAwLnDEQQlbKwAkhkCISQpEwwk1hhFoiuO2ufkRam7b82VUrhbBtG6GQsDfB
+      WjhjGH7nOpRkDqTMpzpnHDuP7MGBu/q39NmiJ1hQUzjnSIwtIL+QKfvmBwBCCfLxHLbzDBcG
+      IKgZhqxj+soYaHjrZdxqRoZtWFt+vzAAQU1gDsPEhZsglGyvSphz5GLpLb99ywbAOcPE8A0M
+      DFxDTrOQXpzB5SsDyGkW1Ewcly5dQjKnbXlhgvqFc46FoVkoaXnbJfI0JCE7n96yG7StHWDX
+      /sM42teJ8cl5jE/HccfxPoyOjmNodApnz57BxPBNiG4bwXq0rIL565OQQtvvYCOEIL+YAbO3
+      Vm6/5bAMIRR6fhFXrw3j6GfOIjnTiUhzFGE2DR5uQygURktYgsM54DhgjMGytu6rCeoDZjsY
+      +2AQHABjzJPf6Rg2coksor0dZb93ywbAHQOR9t34/Bei+PiTGIitQZM7YJEmQM/BsHQohg2J
+      EJBQSIRBBeCcY25wFkZOh7SNg+8thEJQE3l07+0p/61b/lBCMTc5DAcSTp0+DqamMDGbwokT
+      tyNk5TA8NIbjZ85ANEEKllHTMhYGZ7y9+QFQiSI7n8K+Ow6C0PLuuEAlwrSsCiIRNEdbPFqV
+      oFo4lo0br1+BpZsV6Q23TRtnHrkbTWXcG4FKhHHOMXNlDMO/uApniwceQe1YHJqDqegVE0ZY
+      ToqVS2AMwJB15ONZWLqF6Uuj28r+CaqLqRmI3ZwBkSp3u1GJIjUVL/99FVhLRUhPxQFwUIki
+      MR5DZjZZ6yUJNsn8J9MVl8UhhEBLy3Cs8ryDQBiAYztIjC+ASoXDUygSxsSHQzA1o8YrE7ih
+      5zUkRmOelS+XwjZtKKl8We8JhAHI8SxMVV/7TQ5MXBgCc7yJJQu8Z/ncRkPVuc0IJcjOlecZ
+      BMIAFofnQNdlDQklyC9msTA0W6NVCdxQknlk51JVUwSkEkV+MVveeyq0Fs8wFB1yPLfhRZTC
+      EuavT0JOlH/6F1QWxhimLo1uq9JzK2g5FXpe3fTrfW8Aqal4yYgPoRQTH96EY9pVXJXAjcx0
+      Alpm+8Vu5UIIgVxGONTXBsAYQ3J8oWR2jxACUzUxdWlEhEZ9gm3amL02eYvbWg0IJUhPJzb9
+      el8bgBzPwpA116dIIQacgJ7b/NYnqByJ0XlYqlETNXBCCPKJ7KbDob42gPhIbPNPEVLw/wS1
+      xVQNxAZnavL0X4bbDEpqc26Qbw3ANixk5pKbfooQQmDkRQNOLeGcI3ZjuuahaRqWkJlNbe61
+      FV7LluCcIzG+UNYWSgiBLgygphiyhsRYDLSCJQ+bgRCCzGxiU2dCXxoAACQnSh9+10MoEWeA
+      GpOaSgA+mQJkKgYszX1qpi8NQEnkoGWUsg9RhqyLSFCN4JwjPRUvux6/UtCQhOycuxvkOwPg
+      nCM+GoMUKb93wLEd2Lpou6wFek6FvomIXbUglCC34N4s7zsDsE0b6Zn4li4kZ/zWmiFBVUj5
+      6OkPLDfLZ4GgGUB2Lgm+xSAClSi0rDgHVBvOOdIzCd88/ZexdNM1NO4rA+CcIzUZ33LPKCEQ
+      kaAaoCRyMHL+cX+WkcIhZOdLi2b5ygBsw4KS3EZhmwiFVh3OORITCzVNfBWDShS5WOlzgKsB
+      vPnKj/DzX36IrFJ53zo7n95WEoUQAkMWBlBVOEd2NuUr/381WlYBs4vfU64G8Nl7Po/87Cf4
+      L//1L5GrYANWwf1Z3PaTxMhrIhRaReREDpbhHm+vFbZuQS/xUHQ1gJ++9CPIUjeefPJxtIU9
+      XdsabMOCkspv249kDttUAkSwfQoZ+0VIYf8Knknh0vkAVwO45wv3gcuLePW116GtKrnnnGN+
+      agQDV68jp5mIz01heGQE8YwMNZvApUuXkMpv3m3KxTIlt6pyEG5QdWAOQy5WvY6vrUAoRX4h
+      U9QrcDUAByGcu/fX8d3f+xaikbU/a47uwIkjPRgensPcYgoHDx5CT0cLhkYmcebsGYwPDW5K
+      HJdzjtTUoie9ozQkQc0o2/49AnfkRA5WABKPakYu2jDlsndxXPnwPUhde/HLX76Hrz/zNNoj
+      hZuUEKAlxHH52jROnrkLqRkNN68PINK1E1K4DeEyxHFtw0I+Xujl3K7/zsGhZmUhxFtpOJa0
+      fohnIreVwjZt5OIZtO/uuuVnLgbgIK0Bv/XE/XjtpR9DM9mKAXDu4PK1IXz2/HmEKAN29eFA
+      C8Plq5OQmA7LMaEY1qbEceVYFtxhnviSnHNYiolQKOTrrTnoWLoJNZmHJPkv/LmeUDgEJZHH
+      jgM7b/2Zy1vxm489hAvvvYczX/wKdkVXv5yhq60VN298gt69BwE1jslpHSdOHUcTU3DzkyEc
+      O312U+K4qanFFc2f7VIIhYpyiEqTi6XBbMfXB+BlVucD1j8Ui6+eM7z6/A8wtiDDMRW8+osL
+      +LPv/Rm6mgs/JiSCk3feueoNHdi78nUXTp+5dbvZCMeyC6oPHsaRl2fLkgA8nYII5xxJD0LW
+      1cRUDVi6iUjL2pGqxU+dhOKBr3wVdxw9iM6e/fjuH/w+OrY+jrUocjIP2/JW0YExBlMVodBK
+      YWkmlMTGUjV+hdkOtPStwZHiBsAcfP8v/h3eHRhHc3MEg9evwqiAKHN6Ku65bF6hO0wUxVWK
+      7HwKjAUr2UglCdkNhukVd4EIxTf+8N/CsAonfCKFEPG4cog5rKAc5nEaXQpL0DIKuvaVPzFE
+      UBrOCrN9a932WC7LSoLrzwElDICgs7sXzLaQV1Q0t7bB679ZTuRgm5bnBylCqSiKqwC2YWFh
+      aBZqOh+Iw+969LwKUzXQ1Na88j3XPMCL//d/QI90Ia8wPP3M1xH1cBtIT8c9i/6sZ7kmKEh+
+      qh/hnIMzjsWhWSwMzcI27UDe/MvkFzJo6t+z8m+Xu9lBQgUeffQx7IjoUDw8BHDGkZlNVqyK
+      0FQN8ID5qX6DOQwLN2cx8PIFzF6dBGfck9GmtYJSitxCZs33XPMAjz98P956400cPf8gdkW9
+      q4ZTkjlYuolQpDIVdqZmgtlO4HxVvxAfncfc1UnYlg0qUc8H29UCQgnk+NpzQIm7g8NxbFz8
+      ZAwPf+VhpEY+RELxZgfgnCM5UeEqQs5hiqrQLZFbzGDy4jAYY5BCUl25kZZhrUmUlrwDhz6+
+      gMuXLsHSDYRadqKzxZunKed8w5CUpxACPaegtautsp9Th6SWHk71dOMvQwggJ7Jobi9Mkyxh
+      AAQnz30Bf3ryHFpavB1LqudUGIqOcFPlGgykparQHX0V+4i6xLFsZOf92+G1XQilyMUy6D1c
+      OAiXKIXgyMan8c57v4LBwvjcF76Ivt3dngy+tnSr4gO0CRVaoVshH8/BNuy68Pk3ojA/ILtS
+      dVzUp+HMwQ+fewFnPnMKyYUU3njph8howZrPq+eFUly5pCYX6z5wYKjGStNUiVoggtYIxa/e
+      fx+t+45gf087LCdYN5OtFyJBgs3hWDZysXTduj8rcIAt3ctFXSBCKZ7+9neQySno7OzAzNhO
+      tDcHKwFiGVbgEzfVJDufhmM7gY71l0vRO4Mzhv/33F9jOlWQgpidm8cf/5vvoSVg95K1LvUt
+      KE58dL7u3Z/1FN8BCEWzRHH+wcdwsLsJ7/7s5WquyxPI0tSY6M7OWi/F91iGBTmRa6inP+By
+      Brjv4ScQ5SqyuTzu/aePojtgD1IqFapCBe5kphN+kfavKiWjQM/94K8wOjWH2MwonnvuRSiW
+      v5uf10OoaI/cLKnpOIjHfRlBoGQpRF63cOhwP/oP9yPEDVg1nv20FQxFhELdsAwL+cVsXWZ+
+      3SgRBQrhm9/6F/jg4hXMMopHvvY0dgTtBIxCDbtj2ghVMOscdNJT8YY7/C5T0gX60d/8H3x0
+      6WP0nTqHwV/+A5IBTKw6pg3LEBpBxVjWZK372H8RSrpAdstO/NEffBu/eOlZzCTy1VuVl5CC
+      SoRgYwxZgxywBncvKWoAhEi4757PwJA68fRTj2F33xG0BtGLIAR6LoBbV5VITgRL3sRrSoZB
+      bz91Bm1hgmjPPjzy8EPrDIDD1FUkUxkwzuFYBpKpNBjn4I6NRCIB2wcdWZRSqBm51svwJcxh
+      yMwmG9b/B1w7woC//e//CVZTD5rae/D4Y4+uGAHnwNTEOMJNFPNxBUyeRWu0DQsZFVSOIRzt
+      wtR8Cp85c6zilZ+lEKHQ4hiyBj2rbmkiZ73g+peH23tx/p4vIhxuQmTVTkkIwZFjJzA6eAXR
+      7i7kjR7cfqwPV6/ehINWnOg/gusDV5d2hLXiuI5tg3FWNVFVPa/CNM2G9XOLsTg2D1D4XtzW
+      azhnsO2CGJurASzMT2N+bg7h5ij27T+w6pdwXLvyK/QeOoW9OyK4PJ8GZw5sBoCZBZFa2wYh
+      BNI6cVwpFAIl1HNBrGJwh4MwINwcxENMZWAOgxzLQCoiWFzPEEJX7kXXOzDCHQwPD2NsYgpr
+      5ldwHZm0ioWpUczFdeyIclwZuI7dBw5iX08rPh64gvadB3wxhc+xHZhqBec7BRBLM4V2Ejax
+      A/z2t34P1wbHcODIiTWVoIS24NceuH/l37y3A30ouEa8J4pdPmpFpJRAy6lo29Fe66X4Bks3
+      3WZINwSuukAvPPdjkHAIr7/yIjJ68eYSQsiKj738tW98bkJgiFDoGgxZa8jit/W4GACBA47W
+      llYQwjY17siPkKUdQPAphqw3ZPHbelyuAMWhg4fAGcNDj/8WdrQEM2FCCIEuDGANhqw1bPnD
+      alzPAMmZYSSdVjicore7a00oNEhYmtlw7X6lMBTDPy5qDSlqAIzpmJ/PY9fhk2jt7KxayLJS
+      MMeBpZmQ2r3VOAoinHERFVuiRE+wjhf+7m+RNhWc/+zdCLdYAY8aEGhZZUURrJFxbBvMEWoZ
+      QAkDoFIn/tV3fxcfXfkYd5w6BUIlBFkriVAi4t5L2IYNR6hlACjZFE/Q1NKKz997bzXXUzHE
+      QfhTTNUI+G7uHa6O/RsvP4u3/vEi0jk1sGFQAACBKItewlB0EQFawtUAvvjAl6HODuA//Ps/
+      x49efgNmQOumlgfnif7gQoOQiAAVKH4I5gy2zfDmT15E623n8L0nvonF8evQLSBSgXGp1YDZ
+      hUhQpDWgf4BHFJJgwgCAEjuAYyXw7N/9AxQaxefOHAWzTdx27GxFZgVXC845DNEeuVQGIQwA
+      KGEAUngnzp3aiamJCbz99tv4xwsfwQx45EwIZRUeApaYnLNCifkADCpvxsnbdmBqagpNHb0I
+      mDj0LRBSyAU0Mo5pw7EdsQMsUXJQ9l13nUWqbx/ub++EnMsiTDlQ0wbHbULQ8O2RlmGB2Y7I
+      ASxRQhUCSC/O4scvvIjx8XH89JUXkdUCGgJaohAJauxQqKmIEojVuIZBuzuiiMXmce6+h9HT
+      FuBU8BKGooMFUOLRK0xVlEGvpsSVINi1/wBaI03YvXsPZkeuICnXgcIaB7QGlknRMkqgvViv
+      cXkUSDByMdwYHMToTAYtTcHfAaSwBDkZUJU7DzBkkQRbjWtH2INf/g20Nrfgy48+imgk+Fsn
+      oY1dE2SILPAaXO/oHz73PE6ePom3XvohUgE/BC+j57SGLIlgjMEWQsFrcDWAJmLjVxc/QiIe
+      w6uv/gxKHeRQDEVHI5ZDOkYhByD4lBLBYA5ZVvCbv/MvMTczhTvOnsPu3m4EbFDkLRBCYKkG
+      GONoNElMUzPAfaDX6idKzgd48cWXEeFZ/OTNC3j3528iHO369KbhHLqSw8T0HAAgMT+NkZER
+      JDIy9HwKly9fRkb2Z8yZc74yKLmREI3wt1LyGWhrObz096/gS48/hX1dIRjWp08PDmBxcRHT
+      s9MAgNmFJPoOHsSOjhYMDo3h9Ok7MHJz0J89BIRAzzbeQdhUDFBhAGsoOSLpya8+hom4htOH
+      uzGFX1+TCCOEoO/w7VhIpQEA7a1h3Lw+gKYduyGFowiHI2gNUzicAzUWx73lb5MI8skc2vd1
+      1+Tza4WaU8AYB0F9BDO2yqbFcTt69+Fsb+HrQ/2HSrzSxs69/TjUwvDRlTFQZsDhNhTdgkQI
+      SI3FcTfCUgyEw40llmtrFqhEGz4Muloc1/VI+7//259Do51o7tiJf/bU19AWKXyfcxtD165B
+      goTJuTRCZgZjOR3HTh1HC5NxfeA6jp4+69uko6Ho4Iw3lE8skmC34moAzR17cP8/eQChUGRN
+      BIiQEI6fuWvVK3di/8rXO3D2zh1ertNzTNUAcxxINOBhrU1S6AMwGnoc0ka4/u/39+3B1YEB
+      RFo70btrT92EDh3Thm00jjSIrVtgjIFCGMBqXG9nQ81jdm4W8ZQCSnwZ09kaS03yjYKpGvBn
+      SK62uBiAhdGYim9/69voIXEk6qEadAlKCdQGao/U85oog94AlysSxp1H9+L555+H3dGPXR2R
+      6qyqCtBQY/UHG4re0NMgi+HqAJ/7tYdwrhorqQF6vlAU1wiREUPWRB/ABhRXh3Z0vPzss0jq
+      DiRJQqi1C09+9YlgDssugq2bYA4LtGS6YztIjMWw+9j+oq/hnItWyCIU7wmmTfjyk0+Bhii+
+      9tRT6A3pUK36qiS0DQuOadd6GdvCUg1MXxp1bfM0NWEAG1GiKZ6guaUVB7ua8PcvPI+pLNBW
+      Bw0xq2Es+EJZel6DYzvIzqeKv4hzWKoYiLERrnd0144eOKwNnz3TX3dRtHpQjFbTMsLNESwO
+      zxVt8rFN0QdQDNcw6I3JJA73tGF+ZgR5rb4uIpVo4EOhakYGlSjkxSwsfeNuJTPgu1wlcQ2D
+      njrUi9HZSbDWg+iJ1lfWlNBgl0VzxleEvohEER+Z3/B1el4TIdAiuF6V+OI8DMtCYnEO9dhO
+      aih6zcqyt4tjO7CWDrdUokhNxTc8DOt5TdQAFcH1kZ62m/Gvv/MN1GvRpG0WIkG0OXhJPks3
+      YZsOQpHCf6Mha5DjWXTsWdvnIOYBFMd1B5CUBXz/+3+J//WD5+qiIX493GGB1Qs11sk8SuEQ
+      4qOxNYfhQvtnMP++auC6A3zpwa/gk6ks+vt2oamOkmArEAIlmUO0t6PWKykbNS2DSp8+2Qkh
+      yC2kYesWwi2FHY1zDqsefVePcNkBbLz283eRj8Vw4+oHSMrBThptBJVoYJXitKxyS4EbcxhS
+      0/GVf3Mm5gGUwlUasaOJ4+bIdYzGbHS01N9BihACNSUHTiiLc16o8Fzn20shCcnxhZWDvWPa
+      YCIHUJQSBsDBOdDddxx/+Cd/jHtO7IEW1Al5LtiGGTjFNGY7RdesZVVo6UJ+w1SF/1+KkmeA
+      Gx+9i1dffR3zs3PQLIITn6vPWDJzGPScinCAIkGmVjDajTraiESQGI+hracdel4MxCtFCQMg
+      OHX3ffjO3n50toYxkzLREq7PC0lo4RzQvqur1kvZNKUiO5RSpGcS2H/2MPScCirVn+vqFa5R
+      oPc/eB9UyyJrU+zY8w3sqoMhGeshlECOZ4GTt9V6KZtGTedLxvYdy0F2LimGYrvgrgphZ5Hv
+      6MfxqIXmcH26QIXheWqgmmP0nAZSoryBLpVGBO1wX21KaoMODFxFtL0TTm4O01kLoYDcHFvB
+      0sxC43gA4JxDyygljZUQAiWVh5pu3Gk4m6HklMj+/n70HdiDkxaDYRhYswFwDkOTsZCS0Xdg
+      L3LJGMZmEzh6/AQkK48bwxPoP3YHOtuCcrDk0LMqmtqaa70QV5jtwDLcY/uEUti62TDSL1uh
+      ZENMNNqGrh07sXv3btz48G1kVz0gOYBYLIbJ6SkADkbG53DiyD4MDY9j8OYo7jh9B4YHbwSm
+      h4BIFHIiV+tlbApLMzfVyUYlikgADLqWFH80MAcvP/s/MTxfyJIquoPzj3z6Y0IIDvYfxWL6
+      IgAd4Ug3mls7EGaz4OEoIj4Wx90IzjnyiezKGv2Mrhaa+f10/YLE5sRxqYTHfvt3N/krm2Do
+      aVhGN0xEwI08HO5AMfwrjrsRWkYNhGCuREOgkuS76xcUyhLHHRkZBrQELo8reOI3Hlw5ByyL
+      41JQTM6lcax/LwZH5nD8+HGEzAyuD1zD7afOBEqJw7FsmJqBSEtTrZdSEsaYCG16hKsBXLz4
+      PmyDYVdvG5KyjT0dhbfcKo4LnOndW/iiqQdn7+zxfrUVhhBASeQRuc3fBmBsUAMk2BquBnDq
+      0H5obX3oIhq66zAJthoakqAkc+i+rbfWSymJCG16h6sBDI3N4pGn7kdrnSbB1iMncr5PiKkN
+      POnea1zvap6fwX/8i/9ctx1hqyGEQM/7e3gesx2h8uYhrjvA3fc/iqOqDSnSgkh9e0AACn22
+      hqyjub2l1kvZEEs34dhOoOUc/YTrDmAaOnRdx/tvvwXFDkpaa+tQiUJN+bdDTMupDTnku1K4
+      GsD89DiGh4eRUTQ4LvqT9QANScgtZmu9jKLoOVXo/HuI65Xc1dsDTVNx9vyX0F2HLZHrKVSG
+      Kr6tolRdiuAE5eHaFP/htQl8/enfgbVwDQt5/5cJeIGeVVzVlmuFkRc6/17i2hTf2wb89Cc/
+      waLegq7WxqgqdGy2orjmJxhjhT4AsQN4RvE7mnOkk3Hc/aWHYdsOwk3NiDRI+p0QIL+YRXN7
+      a62XsgZbtxpqtGs1KHElOeZnJjBx8woGlW7ce+Z27OjZ2RBDNqVwCEoyj51H9tZ6KWvQsoqY
+      9OgxJRtiTt11HnvaLPDMHtz7uSNVXFbtUVJ5302S17IqSEhEgLxkU/0AHMDEwC5845lnEA1K
+      g9c2MVUDjm0jFPFPebSaloX/7zEe9QPUH45pQ89piPb6xwAM2d9lGkFE7KdFIBL1VdUl57zg
+      AokdwFOEARSBShT5uH8ywrZhwbHqT5y41ggDKILfMsJuMiiCrSEMoASmYvhGWlzNyKDhRghC
+      VxdhACXgjCEbS9d6GQAAJSUiQJVAGEAJaEhCeiru/sIKwxkvJMEEniMMoASEEKhpGbZZ2yJA
+      x7Jh5MWgu0ogDMAFx3KQr3F/gJLKg3N/VqcGHWEALlCJIj2dqOkasvNpSCFRAFcJPDOA5MIs
+      RkZHkcjIMOQMrly+gpwa/P4BQglyC5maxeA551BTeV/VJNUTnhnAzHwcfX196O5owY2bIzh1
+      +iRu3vikLooXHcuumRvEbAeGIuZ8VQrP9tVos4TB6wNo7dkLKRxFJNyEtgCJ45aEAImJBbTt
+      qv4sYTUjw9QMIXHuIZsTxy0LG7sPHEVrs4OProyBciOQ4rilkBezkKgEWmIqSyXQkjIoFUK4
+      XlKWOO7mkJCJj2E0p+PoyeNodvK4NnANR06erpv2Vcd2kF/MoHPvjqp+bn4xCyp6ACqGRwZA
+      cODwMRxY+XcT7rzT3/qa5UIlitRkvKoGUBjfKnqAK4l4tGwSQgiy8ylwVr1jvakavmzOryeE
+      AZSBbdrIJ6oXDVKSOd9Uo9YrwgDKQApLSI4vVO2mlBO5qh+6Gw1xdcug4Aalq6LNyTmHkswL
+      GcQKI65umViaATlZefFc27BgyCIBVmmEAZRJKBJGcmKh4p+jpmUwx6n45zQ6wgDKhFACeTFX
+      ce1QOZET9T9VQBjAFtBlreISJWpaFv5/FRBXeAtQiSJVwU4xx3aECFaVEAawBahEkZlNVswN
+      0nMqLD34peRBQBjAFtFzKuIjcxXJCSiJHKjw/6uCMIAtIoVDmBmYQH4x4/nvVtIyiEiAVQVx
+      lbcBlSjG3huE6WHDykoCTPj/VUEYwDYghIAzhvELNz07D1iaIURwq4gwgG1CKIWczGPm43FP
+      fp+S8o8gbyMgDMADpJCE+MgcUpOL2/5dcjwrCuCqiLjSHkFDEiYuDm/bfZGT+cKQMkFV+P9x
+      tKvnUCgkGQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

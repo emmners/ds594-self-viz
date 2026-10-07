@@ -1,0 +1,591 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='goodreads_library_export' inline='true' name='federated.18ah9my0jhemz212dt32y1eiq4dc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='goodreads_library_export' name='textscan.0wmwpy01nxov8k1021k0u0gjxru7'>
+            <connection class='textscan' directory='C:/Users/emmal/Desktop/DS594' filename='goodreads_library_export.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0wmwpy01nxov8k1021k0u0gjxru7' name='goodreads_library_export.csv' table='[goodreads_library_export#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Book Id' ordinal='0' />
+            <column datatype='string' name='Title' ordinal='1' />
+            <column datatype='string' name='Author' ordinal='2' />
+            <column datatype='string' name='Author l-f' ordinal='3' />
+            <column datatype='string' name='Additional Authors' ordinal='4' />
+            <column datatype='string' name='ISBN' ordinal='5' />
+            <column datatype='string' name='ISBN13' ordinal='6' />
+            <column datatype='real' name='My Rating' ordinal='7' />
+            <column datatype='string' name='Publisher' ordinal='8' />
+            <column datatype='string' name='Binding' ordinal='9' />
+            <column datatype='integer' name='Number of Pages' ordinal='10' />
+            <column datatype='integer' name='Year Published' ordinal='11' />
+            <column datatype='integer' name='Original Publication Year' ordinal='12' />
+            <column datatype='date' name='Date Read' ordinal='13' />
+            <column datatype='date' name='Date Added' ordinal='14' />
+            <column datatype='string' name='Bookshelves' ordinal='15' />
+            <column datatype='string' name='Bookshelves with positions' ordinal='16' />
+            <column datatype='string' name='Exclusive Shelf' ordinal='17' />
+            <column datatype='string' name='My Review' ordinal='18' />
+            <column datatype='string' name='Spoiler' ordinal='19' />
+            <column datatype='string' name='Private Notes' ordinal='20' />
+            <column datatype='integer' name='Read Count' ordinal='21' />
+            <column datatype='integer' name='Owned Copies' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Book Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Book Id]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Book Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Author</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Author]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Author</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Author l-f</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Author l-f]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Author l-f</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Additional Authors</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Additional Authors]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Additional Authors</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISBN</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ISBN]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>ISBN</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISBN13</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ISBN13]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>ISBN13</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>My Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[My Rating]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>My Rating</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Publisher</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Publisher]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Publisher</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Binding</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Binding]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Binding</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Pages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Pages]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Number of Pages</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year Published</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year Published]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Year Published</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original Publication Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Original Publication Year]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Original Publication Year</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Read</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date Read]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Date Read</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Added</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date Added]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Date Added</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bookshelves</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bookshelves]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Bookshelves</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bookshelves with positions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bookshelves with positions]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Bookshelves with positions</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exclusive Shelf</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Exclusive Shelf]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Exclusive Shelf</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>My Review</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[My Review]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>My Review</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Spoiler</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Spoiler]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Spoiler</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Private Notes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Private Notes]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Private Notes</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Read Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Read Count]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Read Count</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Owned Copies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Owned Copies]</local-name>
+            <parent-name>[goodreads_library_export.csv]</parent-name>
+            <remote-alias>Owned Copies</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Book Id]' role='dimension' type='ordinal' />
+      <column caption='Isbn13' datatype='string' name='[ISBN13]' role='dimension' type='nominal' />
+      <column caption='Isbn' datatype='string' name='[ISBN]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year Published]' role='dimension' type='quantitative' />
+      <column caption='goodreads_library_export.csv' datatype='table' name='[__tableau_internal_object_id__].[goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='goodreads_library_export.csv' id='goodreads_library_export.csv_2CD0249F8A9C412283F2E4574FBC94DD'>
+            <properties context=''>
+              <relation connection='textscan.0wmwpy01nxov8k1021k0u0gjxru7' name='goodreads_library_export.csv' table='[goodreads_library_export#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Book Id' ordinal='0' />
+                  <column datatype='string' name='Title' ordinal='1' />
+                  <column datatype='string' name='Author' ordinal='2' />
+                  <column datatype='string' name='Author l-f' ordinal='3' />
+                  <column datatype='string' name='Additional Authors' ordinal='4' />
+                  <column datatype='string' name='ISBN' ordinal='5' />
+                  <column datatype='string' name='ISBN13' ordinal='6' />
+                  <column datatype='real' name='My Rating' ordinal='7' />
+                  <column datatype='string' name='Publisher' ordinal='8' />
+                  <column datatype='string' name='Binding' ordinal='9' />
+                  <column datatype='integer' name='Number of Pages' ordinal='10' />
+                  <column datatype='integer' name='Year Published' ordinal='11' />
+                  <column datatype='integer' name='Original Publication Year' ordinal='12' />
+                  <column datatype='date' name='Date Read' ordinal='13' />
+                  <column datatype='date' name='Date Added' ordinal='14' />
+                  <column datatype='string' name='Bookshelves' ordinal='15' />
+                  <column datatype='string' name='Bookshelves with positions' ordinal='16' />
+                  <column datatype='string' name='Exclusive Shelf' ordinal='17' />
+                  <column datatype='string' name='My Review' ordinal='18' />
+                  <column datatype='string' name='Spoiler' ordinal='19' />
+                  <column datatype='string' name='Private Notes' ordinal='20' />
+                  <column datatype='integer' name='Read Count' ordinal='21' />
+                  <column datatype='integer' name='Owned Copies' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Books Completed Over Time&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='goodreads_library_export' name='federated.18ah9my0jhemz212dt32y1eiq4dc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18ah9my0jhemz212dt32y1eiq4dc'>
+            <column datatype='date' name='[Date Read]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Number of Pages]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Read Count]' role='measure' type='quantitative' />
+            <column-instance column='[Number of Pages]' derivation='Sum' name='[sum:Number of Pages:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Read Count]' derivation='Sum' name='[sum:Read Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date Read]' derivation='Year-Trunc' name='[tyr:Date Read:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.18ah9my0jhemz212dt32y1eiq4dc].[tyr:Date Read:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[tyr:Date Read:ok]' />
+              <groupfilter function='member' level='[tyr:Date Read:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.18ah9my0jhemz212dt32y1eiq4dc].[tyr:Date Read:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.18ah9my0jhemz212dt32y1eiq4dc].[sum:Read Count:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.18ah9my0jhemz212dt32y1eiq4dc].[sum:Number of Pages:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.18ah9my0jhemz212dt32y1eiq4dc].[sum:Number of Pages:qk]' value='Pages Read per Year&#10;'>
+              <formatted-text>
+                <run>Pages Read per Year&#10;</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <size column='[federated.18ah9my0jhemz212dt32y1eiq4dc].[sum:Read Count:qk]' />
+              <color column='[federated.18ah9my0jhemz212dt32y1eiq4dc].[sum:Number of Pages:qk]' />
+              <text column='[federated.18ah9my0jhemz212dt32y1eiq4dc].[tyr:Date Read:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0E14678A-F88D-4F89-AFC8-8B3302213335}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.18ah9my0jhemz212dt32y1eiq4dc].[sum:Number of Pages:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.18ah9my0jhemz212dt32y1eiq4dc].[none:Title:nk]</field>
+            <field>[federated.18ah9my0jhemz212dt32y1eiq4dc].[qr:Date Read:ok]</field>
+            <field>[federated.18ah9my0jhemz212dt32y1eiq4dc].[sum:Number of Pages:qk]</field>
+            <field>[federated.18ah9my0jhemz212dt32y1eiq4dc].[tyr:Date Read:ok]</field>
+            <field>[federated.18ah9my0jhemz212dt32y1eiq4dc].[yr:Date Read:ok]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{9F257D34-C23F-4466-8948-43647FC83366}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAFdUlEQVR4nO3b20/TZxzH8U9P9AgVJ8LEE6ISJfM0tzizbG4XHrIrvd0/sX9hN/tLdm2W
+      xUQTQ6KbJkTZGAyHDgZD2eSgQpXalrb8dscEkl4MKHGf9+uqz9NefG/e/T1Pk4aCIAgEmApv
+      9QDAViIAWCMAWIuu3ihXK3r6YnorZgE2XTqR0utyYXm9JoDJZ091/usv6zoUUC9Xzl7UtYc3
+      l9ccgWCNAGCNAGBtzR3gTbFIVGe6TimTSOn+6KAaE2kd239EgxMPNb+Q0weHjqtSrejucJ9K
+      lUVdOnlOvSP9mlvI1Wt+4D9riMRqPwECSQPjv+neyC86vv+ouvce1rW+HnXvOaRKtaLbQ71a
+      KL5Wa3OLuto79U5Ts9LxVJ3GB9ZnSUHtACrVipINCZ3r/kg/j/2qfLGg6lJV+WJBhXJJR/Yc
+      VGMyo7lX8+rYuUejUxMKhzhV4e1QqVZqB9CYTOtM1yld7b2u+fxLZdONCofCyqYb1dm2T/Fo
+      XD2DdxRviKuwWNSR9oPav3N3veYH1qUpkakdQDQcVRAEunDqnPa17Fbf6IDOn/hEfaODCodC
+      2tHUrAsnP1WpvKjbD3p1o/+W+scf1Gt+YF2ikWjtS/BcPqfv799csTf5fGr59fDk6Ir3ns7N
+      bOB4wOZ6kZ/nZ1B4IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYi67eyCRTuvLx
+      xa2YBdh0h3cdkB7+u14TwELptb776UY9ZwLq5nJk5Zc7RyBYIwBYIwBYW3MHeFMiFtdn3WcV
+      i8Q0MjWu5nRWbdkWTedmNT77RO93vKdYJKa7v/fp+L6jSsTiGpue0NDko3rND6xLzSdAqVzS
+      jYFbGnrySM3prDLxtK7ev650PK3Zl891rb9Hc/mcQpJ+GO7VyNS4kg2JOo0OrF/NAAJJH3ae
+      UPv2NvX9MaDqUlWSVF2qKhKO6IsTn+vvuWlN5Wa1s2mHDrTsVbG8WI+5gQ1RM4DWbIsOtXZo
+      9uVzZZJpJRri6nq3U4mGuE4fOKZCuSRJ2p7ZpqZkRmMzE2rb1lKXwYGNUPMOMJef14+P7kmS
+      KtWKeobuaFdzq3qG7igebdC2dFaBAhUWi3pVzCscCun2cG9dBgc2Qs0AFitlTTybXLE3NvNY
+      klQsl5QrvFreX/054G3Az6CwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwVvP/AMD/ze7trfr2q2+W1wQAK+WlRf2V/3N5zREI1ggA1ggAtoIgIAD4KuSLBABf
+      qUySAOCrWl0iAPiafjxDAPC1q6ONAOCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGAtunojE0/p8umLWzELsOmOtnepNZ1aXv8DJOkb
+      xLk03dEAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
